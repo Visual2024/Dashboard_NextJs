@@ -1,7 +1,6 @@
 'use client';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import './global.css';
 import { lusitana } from './ui/fonts';
 import AcmeLogo from './ui/acme-logo';
 import Image from 'next/image';
@@ -10,7 +9,7 @@ import { usePathname } from 'next/navigation';
 export default function Page() {
   const pathname = usePathname();
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <main className="flex min-h-screen flex-col p-6 bg-black">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AcmeLogo />
       </div>
